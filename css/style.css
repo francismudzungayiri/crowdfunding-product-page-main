@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+
+:root{
+    --Moderate-cyan: hsl(176, 50%, 47%);
+    --Dark-cyan: hsl(176, 72%, 28%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-gray: hsl(0, 0%, 48%);
+    --White: white;
+    --Background-color: rgb(230, 230, 230);
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Commissioner', sans-serif;
+    background-color: var(--Background-color);
+    overflow-x: hidden;
+}
+/** global styling **/
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--White);
+    font-weight: 500;
+}
+
+h1{
+    color: var(--Black);
+    font-weight: 700;
+    font-size: 1.8em;
+}
+h2{
+    color: var(--Black);
+    font-weight: 700;
+    font-size: 1.2em; 
+}
+p{
+    color: var(--Dark-gray);
+    font-weight: 500;
+    font-size: 14px;
+}
+button{
+    padding: .6em 1em;
+    font-weight: 700;
+    cursor: pointer;
+}
+.container{
+    width: 45%;
+    background-color: transparent;
+    margin:auto;
+    position:relative;
+    bottom: 7em;
+}
+
+/* styling the header section*/
+header {
+    width: 100vw;
+    height: 60vh;
+    background-image: url(../images/image-hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding:3% 7%; 
+}
+/***nav bar***/
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    width: 100%;
+}
+.right-nav{
+    width: 20%;
+    display: flex;
+    justify-content:space-between;
+}
+.back-this-project{
+    background-color: var(--White);
+    padding: 0 2em 2em 2em;
+    text-align: center;
+    border-radius: 10px;
+}
+#logo-master{
+    position: relative;
+    bottom: 2em;
+    margin-bottom: 0;
+}
+.back-this-project p{
+    margin: .6em 0 1.2em 0;
+}
+.back-this-project div{
+    display: flex;
+    justify-content:space-between;
+    margin: 0 2em;
+}
+.light-cyan-btn{
+    background-color: var(--Moderate-cyan);
+    border-radius: 2em;
+    border: none;
+    cursor: pointer;
+    color: var(--White);
+}
+.gray-btn{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 0 1em 0 0;
+    border: none;
+    border-radius: 3em;
+    color: var(--Dark-gray);
+}
+.gray-btn img{
+    width: 30%;
+}
+
+/* styling Stats section**/
+
+.stats{
+    background-color: var(--White);
+    margin-top: 1em;
+    border-radius: 10px;
+    padding-bottom: 1em;
+}
+.numbers{
+    width: 100%;
+    padding: 2em 0;
+    display: flex;
+    justify-content:space-around;
+}
+.stats .numbers div{
+    text-align: center;
+    width: 33%; 
+}
+.right-line{
+    border-right: 1px solid var(--Dark-gray);
+}
+.stats p{
+    margin-top: .5em;
+}
+.progress{
+    width: 80%;
+    margin: .8em auto;
+    height: .7em;
+    border-radius: 1em;
+    background-color: var(--Background-color);
+}
+.progress-bar{
+    background-color: var(--Moderate-cyan);
+    border-radius: 1em;
+    width:80%;
+    height: 100%;
+}
